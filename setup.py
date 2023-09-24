@@ -5,6 +5,8 @@ HYPEN_E_DOT="-e ."
 def get_requirements(file_path:str)->List[str]:
     ''''
     this function will return the list of requirements
+    Reads the entire file at the specified file path. The function returns all the text in the file as a string, if
+    the file is empty it will return an empty string ("").
     '''
     requirements=[]
     with open(file_path) as file_obj:
@@ -16,8 +18,6 @@ def get_requirements(file_path:str)->List[str]:
     
     return requirements
 
-
-    
 
 setup(
 name='ML_Project',
